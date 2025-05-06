@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELPB - Penerbit Buku</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo company profile.jpg" alt="Logo VELPB" />
+    <h1>VELPB - Penerbit Buku</h1>
+    <p>Menyebarkan ilmu dan inspirasi melalui buku berkualitas</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Selamat datang di VELPB</h1>
+    <p>Temukan karya terbaik dari penulis inspiratif</p>
+  </section>
+
+  <section class="content">
+    <div id="tentang" class="card">
+      <h2>Tentang Kami</h2>
+      <p>VELPB adalah perusahaan penerbitan buku yang berkomitmen untuk menerbitkan karya-karya berkualitas tinggi, baik fiksi maupun non-fiksi, dalam berbagai genre. Kami mendukung para penulis lokal dan nasional untuk berkembang.</p>
+    </div>
+
+    <div id="layanan" class="card">
+      <h2>Layanan Kami</h2>
+      <ul>
+        <li>Penerbitan buku cetak dan digital</li>
+        <li>Editing dan proofreading</li>
+        <li>Desain sampul dan tata letak</li>
+        <li>Pemasaran dan distribusi buku</li>
+      </ul>
+    </div>
+
+    <div id="kontak" class="card">
+      <h2>Kontak</h2>
+      <p>Email: info@velpb.co.id</p>
+      <p>Alamat: Jl. Buku No. 10, Jakarta</p>
+      <form onsubmit="kirimPesan(event)">
+        <input type="text" name="nama" placeholder="Nama Anda" required />
+        <input type="email" name="email" placeholder="Email Anda" required />
+        <textarea name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VELPB. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    function kirimPesan(event) {
+      event.preventDefault();
+      alert("Pesan Anda berhasil dikirim. Terima kasih telah menghubungi VELPB!");
+    }
+  </script>
+</body>
+</html>
